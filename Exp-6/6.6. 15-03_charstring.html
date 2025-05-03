@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program to extract a specified number of characters from a string. -->
+
+<HTML>
+
+<HEAD>
+	<SCRIPT>
+
+		function charstrg() {
+			var input = document.getElementById("ran").value;
+			var numb1 = document.getElementById("num1").value;
+			var numb2 = document.getElementById("num2").value;
+			alert("The substring extracted is " + input.substring(numb1, numb2));
+		}
+
+	</SCRIPT>
+</HEAD>
+
+<BODY>
+	<h3>A JavaScript function to extract a specified number of characters from a string.</h3>
+	<form name="form2">
+		Enter string: <input type="text" name="word" id="ran"><BR><br>
+		Enter start number for characters: <input type="Number" id="num1"><BR><br>
+		Enter end number for characters: <input type="Number" id="num2"><BR><br>
+		<input type="button" value="Result" onclick="charstrg()">
+	</form>
+</BODY>
+
+</HTML>

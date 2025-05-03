@@ -1,0 +1,37 @@
+<!-- Write a JavaScript program that changes the background color of an element on a particular event. -->
+
+<HTML>
+
+<HEAD>
+    <style>
+        #target {
+            width: 400px;
+            height: 200px;
+            background-color: orange;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+
+    <script>
+        function bgcol() {
+
+            var element = document.getElementById("target");
+
+
+            element.style.backgroundColor = 'blue';
+        }
+
+    </script>
+</HEAD>
+
+<BODY>
+    <h3>A JavaScript function that changes the background color of an element on a particular event.</h3>
+
+    <div id="target">Background color will change. </div>
+    <FORM>
+        <input type="button" onclick="bgcol()" value="Change bgcolor">
+    </FORM>
+</BODY>
+
+</HTML>

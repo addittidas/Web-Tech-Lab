@@ -1,0 +1,36 @@
+<!-- Write a JavaScript program to show the use of alert, prompt and confirm dialog boxes. -->
+
+<html>
+
+<head>
+	<script>
+		function msg() {
+			alert("welcome to this page!");
+		}
+
+		function msgp() {
+			var uname = prompt("Enter your name");
+			document.write("Your Name is " + uname);
+		}
+
+
+		function delmsg() {
+			var x = confirm("Are u sure want to submit?");
+			if (x == true) {
+				alert("Submitted");
+			}
+			else {
+				alert("Action Cancelled by User");
+			}
+		}  
+	</script>
+</head>
+
+<body>
+	<h3>A JavaScript program to show the use of alert, prompt and confirm dialog boxes.</h3>
+	Use of alert box: <input type="button" value="type" onclick="msg()" /><br><br>
+	Use of prompt box: <input type="button" value="enter" onclick="msgp()" /><br><br>
+	Use of confirm box: <input type="button" value="submit" onclick="delmsg()" />
+</body>
+
+</html>

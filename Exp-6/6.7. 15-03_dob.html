@@ -1,0 +1,34 @@
+<!-- Write a JavaScript program to accept date of birth from a user and calculate the difference till current date. -->
+
+<HTML>
+
+<HEAD>
+    <SCRIPT>
+        function dobdiff() {
+            var input = document.getElementById("dobd").value;
+
+            var dob = new Date(input);
+
+            var currentDate = new Date();
+
+            var diff = currentDate - dob;
+
+            var millisecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
+            var age = Math.floor(diff / millisecondsPerYear);
+
+            alert("Your age: " + age);
+        }
+
+
+    </SCRIPT>
+</HEAD>
+
+<BODY>
+    <h3>A JavaScript function to accept date of birth from a user and calculate the difference till current date.</h3>
+    <form name="form2">
+        Enter DOB: <input type="date" id="dobd"><BR><br>
+        <input type="button" value="Result" onclick="dobdiff()">
+    </form>
+</BODY>
+
+</HTML>

@@ -1,0 +1,94 @@
+<!-- Write a JavaScript program that displays the largest integer among two integers. -->
+ 
+<HTML>
+<HEAD>
+<style>
+     form {
+          margin-left: 60px;
+     }
+
+.container{
+width: 98vw;
+display:flex;
+align-items: center;
+flex-direction: column;
+}
+
+.box{
+border: 3px solid black;
+padding: 50px 150px 50px 150px;
+}
+</style>
+
+<script>
+function valform(){
+	var name = document.frm.TXTNAME.value;
+	var age = document.frm.NUMAGE.value;
+	var num = document.frm.PH.value;
+	var pwd = document.frm.PWD.value;
+	
+	if (name == ""){
+		alert("Name cannot be empty");
+	}
+
+	if (age == ""){
+		alert("Age cannot be empty");
+	}
+
+	if (num == ""){
+		alert("Phone number cannot be empty");
+	}
+
+	if (pwd == ""){
+		alert("Password cannot be empty");
+	}
+
+	if (pwd.length < 6){
+		alert("Password should contain atleast 6 characters!");
+	}
+
+	if (age < 15 || age > 25){
+		alert("Age should be between 15 and 25.");
+	}
+}
+
+</script>
+</HEAD>
+<BODY bgcolor='#fff9c4'>
+<CENTER>
+<h1><FONT Face='Times New Roman' color='#00838f' size=18px> COURSE REGISTRATION FORM </FONT></h1></center>
+<br><br>
+<div CLASS="container">
+<FORM class="box" name ="frm">
+
+<FONT Face='Times New Roman' color='#00838f' size='5'>
+Enter Name: <INPUT TYPE= "TEXT" NAME="TXTNAME"><BR><br>
+Enter Age: <INPUT TYPE= "NUMBER" NAME="NUMAGE"><BR><br>
+
+Enter Gender: <BR>
+<INPUT TYPE= "RADIO" NAME="R1" VALUE="M"> Male <BR>
+<INPUT TYPE= "RADIO" NAME="R1" VALUE="F"> Female <BR>
+<INPUT TYPE= "RADIO" NAME="R1" VALUE="O"> Others <BR><br>
+
+Enter Phone No. : <INPUT TYPE= "TEL" NAME="PH" maxlength=10><BR><br>
+
+<label for="course">Select your course:</label>
+
+<select name="course" id="course">
+  <option value="BT">B.Tech</option>
+  <option value="Football">BCA</option>
+  <option value="Table Tennis">M.Tech</option>
+  <option value="Chess">MCA</option>
+<option value="Badminton">B.Des</option>
+<option value="Cricket">M.Des</option>
+</select>
+<br><br>
+Enter password: <INPUT TYPE= "PASSWORD" NAME="PWD"><BR><br>
+<INPUT TYPE="button" VALUE="Submit" onclick="valform()">
+<INPUT TYPE="Reset" VALUE="Reset">
+</font>
+
+</FORM>
+</div>
+</BODY>
+</HTML>

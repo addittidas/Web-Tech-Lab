@@ -1,0 +1,25 @@
+<!-- Write a Java script program to Generate a Random Number and display it in a textbox. -->
+
+<HTML>
+
+<HEAD>
+    <SCRIPT>
+
+        function rndm() {
+
+            var num = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('ran').value = num;
+        }
+
+    </SCRIPT>
+</HEAD>
+
+<BODY>
+    <h3>A JavaScript program to Generate a Random Number and display it in a textbox.</h3>
+    <form name="form2">
+        <input type="Number" id="ran"><BR><br>
+        <input type="button" value="Random Number" onclick="rndm()">
+    </form>
+</BODY>
+
+</HTML>
