@@ -1,0 +1,29 @@
+<!-- Write a code to create a cost calculator. -->
+
+<html lang="en" ng-app="costCalculatorApp">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-controller="costCalculatorCtrl">
+  <h3>To create a cost calculator</h3>
+  <div>
+    Quantity: <input type="number" id="quantity" min="1" ng-model="quantity"><br><br>
+    Price: <input type="number" id="price" min="0" step="0.01" ng-model="price"><br><br>
+    <button ng-click="calculateCost()">Calculate Total Cost</button>
+    <p>Total Cost: Rs.{{ totalCost }}</p>
+  </div>
+  <script>
+    angular.module('costCalculatorApp', [])
+      .controller('costCalculatorCtrl', function ($scope) {
+        $scope.totalCost = 0;
+
+        $scope.calculateCost = function () {
+          $scope.totalCost = $scope.quantity * $scope.price;
+        };
+      });
+  </script>
+</body>
+
+</html>

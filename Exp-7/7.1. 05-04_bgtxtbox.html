@@ -1,0 +1,16 @@
+<!-- Write a code to change the background of the textbox based on the color mentioned by the user in the same text box. -->
+
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+  <h3>To change the background of the textbox based on the color mentioned by the user in the same text box</h3>
+  <form name="frm">
+    Enter colour name: <input type="text" ng-model="userColor" ng-style="{'background-color': userColor}">
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!-- Write a code to build a simple search filter functionality to display a filtered list based on the search query entered by the user. -->
+
+<html lang="en" ng-app="searchFilterApp">
+
+<head>
+  <style>
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="searchFilterCtrl">
+  <h3>To build a simple search filter functionality to display a filtered list based on the search query entered by the
+    user</h3>
+  <div>
+    <h2>Search Filter</h2>
+    <input type="text" ng-model="searchQuery" placeholder="Search...">
+    <ul>
+      <li ng-repeat="item in items | filter:searchQuery">{{ item }}</li>
+    </ul>
+  </div>
+  <script>
+    angular.module('searchFilterApp', [])
+      .controller('searchFilterCtrl', function ($scope) {
+        $scope.items = [
+          'Football',
+          'Basketball',
+          'Tennis',
+          'Volleyball',
+          'Cricket',
+          'Badminton',
+          'Chess',
+          'Carrom'
+
+        ];
+      });
+  </script>
+</body>
+
+</html>

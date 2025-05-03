@@ -1,0 +1,55 @@
+<!-- Use AngularJS Tables to perform the following.
+Display a Table
+Display contents of table with Order by Filter
+Display Table with even and odd. -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <style>
+    .even {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div ng-controller="TableController">
+    <h3>Table with Order By Filter and Even/Odd Rows</h3>
+    <table>
+      <thead>
+        <tr>
+          <th ng-click="orderByField='name'; reverseSort=!reverseSort">Name</th>
+          <th ng-click="orderByField='age'; reverseSort=!reverseSort">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="person in people | orderBy:orderByField:reverseSort" ng-class="{'even': $even, 'odd': $odd}">
+          <td>{{ person.name }}</td>
+          <td>{{ person.age }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    var app = angular.module('myApp', []);
+
+    app.controller('TableController', function ($scope) {
+      $scope.people = [
+        { name: 'Himanshi', age: 19 },
+        { name: 'Anushka', age: 19 },
+        { name: 'Vanshika', age: 20 },
+        { name: 'Aditi', age: 20 },
+        { name: 'Meghna', age: 19 }
+      ];
+
+      $scope.orderByField = 'name';
+      $scope.reverseSort = false;
+    });
+  </script>
+</body>
+
+</html>
