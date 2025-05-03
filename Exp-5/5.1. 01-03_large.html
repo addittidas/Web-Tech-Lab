@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program that displays the largest integer among two integers. -->
+
+<html>
+
+<head>
+    <title> Largest Integer </title>
+    <script>
+        function result() {
+            var input1 = document.form1.fir.value;
+            var input2 = document.form1.sec.value;
+            var result = Math.max(input1, input2);
+            alert("Largest number: " + result);
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h3>A JavaScript program that displays the largest integer among two integers.</h3>
+    <form name="form1">
+        Enter first number: <input type="integer" name="fir"><BR><br>
+        Enter second number: <input type="integer" name="sec"><BR><br>
+        <button onclick="result()">Result</button>
+    </form>
+</body>
+
+</html>

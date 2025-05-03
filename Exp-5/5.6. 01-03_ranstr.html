@@ -1,0 +1,32 @@
+<!-- Write a JavaScript program to generate a random string. -->
+
+<HTML>
+
+<HEAD>
+	<SCRIPT>
+
+		function rndm() {
+
+			var result = '';
+			var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+			var charlen = characters.length;
+			var length = 10;
+			for (var i = 0; i < length; i++) {
+				result += characters.charAt(Math.floor(Math.random() * charlen));
+			}
+
+			document.getElementById("ran").value = result;
+		}
+
+	</SCRIPT>
+</HEAD>
+
+<body>
+	<h3>A JavaScript program to generate a random string.</h3>
+	<form name="form2">
+		<input type="Text" id="ran"><BR><br>
+		<input type="button" value="Random String" onclick="rndm()">
+	</form>
+</BODY>
+
+</HTML>

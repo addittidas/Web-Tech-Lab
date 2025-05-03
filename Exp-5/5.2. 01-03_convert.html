@@ -1,0 +1,33 @@
+<!-- Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.  -->
+
+<HTML>
+
+<HEAD>
+	<SCRIPT>
+
+		function conv() {
+
+			var input = document.getElementById("ran").value;
+			var word = input.split(" ");
+			var result = "";
+			for (var i = 0; i < word.length; i++) {
+				var firstLetter = word[i].charAt(0).toUpperCase();
+				var restword = word[i].slice(1);
+				result += firstLetter + restword + " ";
+			}
+			alert("After conversion: " + result);
+		}
+
+	</SCRIPT>
+</HEAD>
+
+<body>
+	<h3>A JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper
+		case.</h3>
+	<form name="form2">
+		Enter string: <input type="Text" id="ran"><BR><br>
+		<input type="button" value="Convert" onclick="conv()">
+	</form>
+</BODY>
+
+</HTML>
