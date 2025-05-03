@@ -1,0 +1,167 @@
+<!-- 1.	Add a CSS media query and appropriate styles so that the webpage looks similar even when resized to smaller widths. Specifically:
+2.	The sidebar should be hidden.
+3.	The body should have no padding.
+4.	The images shouldn't exceed the width of the window.
+5.	The navigation items should each be on their own line.
+6.	The header should be fixed, so that it stays at the top after scrolling. -->
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    header {
+      background-color: #8d6e63;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+    }
+
+    div {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #5d4037;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background: #eee;
+      padding: 20px;
+      width: 100%;
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      transform: translateY(-5px);
+      color: #42A5F5;
+    }
+
+    .sidebar {
+      background-color: #d7ccc8;
+      color: #fff;
+      width: 100px;
+      height: 100%;
+      position: fixed;
+      top: 100px;
+      left: 0;
+
+    }
+
+    .men {
+      text-decoration: none;
+      color: brown;
+
+    }
+
+    @media screen and (max-width: 992px) {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .sidebar {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>XYZ WEBSITE</h1>
+  </header>
+  <section style="padding: 100px;">
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section style="padding: 25px;">
+
+      <aside class="sidebar">
+        <h3 style="color:black; text-align:center;"> Menu </h3>
+        <center>
+          <a href="#" class="men">Link 1</a><br>
+          <a href="#" class="men">Link 2</a><br>
+          <a href="#" class="men">Link 3</a>
+        </center>
+      </aside>
+
+      <center><img style="display: inline; margin: 0 5px;" title="heartica_logo" src='..\Pictures\webpage-creation.png'
+          width='600' height='300'>
+      </center><br>
+
+      <h2>ABOUT US</h2>
+
+      <p style="font-size: 16px;  color: #666;">A web page (or webpage) is a document on the World Wide Web "with its
+        own address".Web pages are delivered by a web server to the user and displayed in a web browser to act as a
+        "retrieval unit" for the information stored within it. A website consists of many web pages linked together
+        under a common domain name. The name "web page" is a metaphor of paper pages bound together into a book.</p>
+    </section>
+
+    <div>
+      <p>Please visit again!</p>
+    </div>
+</body>
+
+</html>
