@@ -1,0 +1,73 @@
+<!-- Create HTML form for selecting sports in your university.
+The form should have fields like Name, Password, Address, Select Game, Gender, Age etc. -->
+
+<HTML>
+
+<HEAD>
+
+     <head>
+          <style>
+               form {
+                    margin-left: 60px;
+               }
+
+               .container {
+                    width: 98vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+               }
+
+               .box {
+                    border: 3px solid black;
+                    padding: 50px 150px 50px 150px;
+               }
+          </style>
+
+          <TITLE> REGISTRATION FORM </TITLE>
+     </HEAD>
+
+<BODY bgcolor='#fff9c4'>
+     <CENTER>
+          <h1>
+               <FONT Face='Times New Roman' color='#00838f' size=18px>REGISTRATION FORM FOR SPORTS</FONT>
+          </h1>
+          <img src='..\Pictures\sport-basketball-sports-global-university-13.png'>
+     </CENTER><br><br>
+     <div CLASS="container">
+          <FORM class="box">
+
+               <FONT Face='Times New Roman' color='#00838f' size='5'>
+                    Enter Name: <INPUT TYPE="TEXT" NAME="TXTNAME"><BR><br>
+                    Enter Age: <INPUT TYPE="NUMBER" NAME="NUMAGE"><BR><br>
+
+                    Enter Gender: <BR><INPUT TYPE="RADIO" NAME="R1" VALUE="M"> Male <BR>
+                    <INPUT TYPE="RADIO" NAME="R1" VALUE="F"> Female <BR>
+                    <INPUT TYPE="RADIO" NAME="R1" VALUE="O"> Others <BR><br>
+
+                    Enter Phone No. : <INPUT TYPE="TEL" NAME="PH"><BR><br>
+                    Enter Address: <INPUT TYPE="TEXT" NAME="ADD"><BR><br>
+
+                    <label for="cars">Select your sports:</label>
+
+                    <select name="cars" id="cars">
+                         <option value="Basketball">Basketball</option>
+                         <option value="Football">Football</option>
+                         <option value="Table Tennis">Table Tennis</option>
+                         <option value="Chess">Chess</option>
+                         <option value="Badminton">Badminton</option>
+                         <option value="Cricket">Cricket</option>
+                         <option value="Volleyball">Volleyball</option>
+                    </select>
+                    <br><br>
+                    Enter password: <INPUT TYPE="PASSWORD" NAME="PWD"><BR><br>
+                    <INPUT TYPE="Submit" VALUE="Submit">
+                    <INPUT TYPE="Reset" VALUE="Reset">
+               </font>
+
+          </FORM>
+     </div>
+</BODY>
+
+</HTML>

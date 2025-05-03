@@ -1,0 +1,64 @@
+<!-- Create a HTML form for a student for course registration which should have following fields:
+1.	Student Name (textbox)
+2.	Age (textbox with numbers only)
+3.	Date of Birth (Calendar)
+4.	Select Course (Drop Down)
+5.	Submit (Button) -->
+
+<HTML>
+
+<HEAD>
+  <style>
+    .container {
+      width: 98vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .box {
+      border: 3px solid black;
+      padding: 50px 150px 50px 150px;
+    }
+  </style>
+
+  <TITLE> COURSE REGISTRATION FORM </TITLE>
+</HEAD>
+
+<BODY bgcolor='#b2dfdb'>
+  <CENTER>
+    <h1>
+      <font Face='Times New Roman' color='#00838f' size=18px>COURSE REGISTRATION FORM</font>
+    </h1>
+    <img src='..\Pictures\large_07044846-c03b-4ad8-8c0b-e391d56bbb66.jpg'
+      height='300' width='700'>
+  </CENTER><br><br>
+  <div CLASS="container">
+    <FORM class="box">
+
+      <FONT Face='Times New Roman' color='#00838f' size='5'>
+        Enter Name: <INPUT TYPE="TEXT" NAME="TXTNAME"><BR><br>
+        Enter Age: <INPUT TYPE="NUMBER" NAME="NUMAGE"><BR><br>
+
+        Enter DOB: <INPUT TYPE="DATE" NAME="DOB"><BR><br>
+
+        <label for="cars">Select your course:</label>
+
+        <select name="cor" id="cor">
+          <option value="Basketball">B-TECH</option>
+          <option value="Football">M-TECH</option>
+          <option value="Table Tennis">BCA</option>
+          <option value="Chess">MCA</option>
+          <option value="Badminton">B.DES</option>
+          <option value="Cricket">M.DES</option>
+        </select>
+        <br><br>
+        <INPUT TYPE="Submit" VALUE="Submit">
+      </font>
+
+    </FORM>
+  </div>
+</BODY>
+
+</HTML>
