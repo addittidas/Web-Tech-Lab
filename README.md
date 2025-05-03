@@ -3,7 +3,7 @@
 ## 📌 About This Repository
 This repository contains the lab exercises for the subject **Web Technologies**, Sem-IV (2024).
 
-## 📂 Lab Exercises Contents
+## Lab Exercises Contents
 
 | Experiment No | Title |
 |--------------|-------------------------------------------------|
@@ -15,7 +15,7 @@ This repository contains the lab exercises for the subject **Web Technologies**,
 | 6  | Java Script Event Handling and Functions |
 | 7  | Using Angular JS Implement Input Validation |
 
-## 🚀 How to Use
+## How to Use
 1. Clone this repository:
    ```sh
    git clone https://github.com/addittidas/Web-Tech-Lab.git
@@ -26,5 +26,5 @@ This repository contains the lab exercises for the subject **Web Technologies**,
 
 3. Run the experiments as needed.
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
